@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.student_at_risk -->
+    <record id="view_ibschool.student_at_risk_tree" model="ir.ui.view">
+      <field name="name">ibschool.student_at_risk tree</field>
+      <field name="model">ibschool.student_at_risk</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.student_at_risk">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.student_at_risk_form" model="ir.ui.view">
+      <field name="name">ibschool.student_at_risk form</field>
+      <field name="model">ibschool.student_at_risk</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.student_at_risk">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.student_at_risk" model="ir.actions.act_window">
+      <field name="name">ibschool.student_at_risk</field>
+      <field name="res_model">ibschool.student_at_risk</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.student_at_risk records.]]></field>
+    </record>
+  </data>
+</odoo>

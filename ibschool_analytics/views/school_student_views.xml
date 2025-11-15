@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.school_student -->
+    <record id="view_ibschool.school_student_tree" model="ir.ui.view">
+      <field name="name">ibschool.school_student tree</field>
+      <field name="model">ibschool.school_student</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.school_student">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.school_student_form" model="ir.ui.view">
+      <field name="name">ibschool.school_student form</field>
+      <field name="model">ibschool.school_student</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.school_student">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.school_student" model="ir.actions.act_window">
+      <field name="name">ibschool.school_student</field>
+      <field name="res_model">ibschool.school_student</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.school_student records.]]></field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.lms_assignment -->
+    <record id="view_ibschool.lms_assignment_tree" model="ir.ui.view">
+      <field name="name">ibschool.lms_assignment tree</field>
+      <field name="model">ibschool.lms_assignment</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.lms_assignment">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.lms_assignment_form" model="ir.ui.view">
+      <field name="name">ibschool.lms_assignment form</field>
+      <field name="model">ibschool.lms_assignment</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.lms_assignment">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.lms_assignment" model="ir.actions.act_window">
+      <field name="name">ibschool.lms_assignment</field>
+      <field name="res_model">ibschool.lms_assignment</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.lms_assignment records.]]></field>
+    </record>
+  </data>
+</odoo>

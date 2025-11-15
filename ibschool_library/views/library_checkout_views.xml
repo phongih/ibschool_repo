@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.library_checkout -->
+    <record id="view_ibschool.library_checkout_tree" model="ir.ui.view">
+      <field name="name">ibschool.library_checkout tree</field>
+      <field name="model">ibschool.library_checkout</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.library_checkout">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.library_checkout_form" model="ir.ui.view">
+      <field name="name">ibschool.library_checkout form</field>
+      <field name="model">ibschool.library_checkout</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.library_checkout">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.library_checkout" model="ir.actions.act_window">
+      <field name="name">ibschool.library_checkout</field>
+      <field name="res_model">ibschool.library_checkout</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.library_checkout records.]]></field>
+    </record>
+  </data>
+</odoo>

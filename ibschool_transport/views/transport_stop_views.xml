@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.transport_stop -->
+    <record id="view_ibschool.transport_stop_tree" model="ir.ui.view">
+      <field name="name">ibschool.transport_stop tree</field>
+      <field name="model">ibschool.transport_stop</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.transport_stop">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.transport_stop_form" model="ir.ui.view">
+      <field name="name">ibschool.transport_stop form</field>
+      <field name="model">ibschool.transport_stop</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.transport_stop">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.transport_stop" model="ir.actions.act_window">
+      <field name="name">ibschool.transport_stop</field>
+      <field name="res_model">ibschool.transport_stop</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.transport_stop records.]]></field>
+    </record>
+  </data>
+</odoo>

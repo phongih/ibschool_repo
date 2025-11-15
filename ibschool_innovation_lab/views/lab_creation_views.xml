@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.lab_creation -->
+    <record id="view_ibschool.lab_creation_tree" model="ir.ui.view">
+      <field name="name">ibschool.lab_creation tree</field>
+      <field name="model">ibschool.lab_creation</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.lab_creation">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.lab_creation_form" model="ir.ui.view">
+      <field name="name">ibschool.lab_creation form</field>
+      <field name="model">ibschool.lab_creation</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.lab_creation">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.lab_creation" model="ir.actions.act_window">
+      <field name="name">ibschool.lab_creation</field>
+      <field name="res_model">ibschool.lab_creation</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.lab_creation records.]]></field>
+    </record>
+  </data>
+</odoo>

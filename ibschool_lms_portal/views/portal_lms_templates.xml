@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.portal_lms_templates -->
+    <record id="view_ibschool.portal_lms_templates_tree" model="ir.ui.view">
+      <field name="name">ibschool.portal_lms_templates tree</field>
+      <field name="model">ibschool.portal_lms_templates</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.portal_lms_templates">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.portal_lms_templates_form" model="ir.ui.view">
+      <field name="name">ibschool.portal_lms_templates form</field>
+      <field name="model">ibschool.portal_lms_templates</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.portal_lms_templates">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.portal_lms_templates" model="ir.actions.act_window">
+      <field name="name">ibschool.portal_lms_templates</field>
+      <field name="res_model">ibschool.portal_lms_templates</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.portal_lms_templates records.]]></field>
+    </record>
+  </data>
+</odoo>

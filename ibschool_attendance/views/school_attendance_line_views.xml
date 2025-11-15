@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.school_attendance_line -->
+    <record id="view_ibschool.school_attendance_line_tree" model="ir.ui.view">
+      <field name="name">ibschool.school_attendance_line tree</field>
+      <field name="model">ibschool.school_attendance_line</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.school_attendance_line">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.school_attendance_line_form" model="ir.ui.view">
+      <field name="name">ibschool.school_attendance_line form</field>
+      <field name="model">ibschool.school_attendance_line</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.school_attendance_line">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.school_attendance_line" model="ir.actions.act_window">
+      <field name="name">ibschool.school_attendance_line</field>
+      <field name="res_model">ibschool.school_attendance_line</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.school_attendance_line records.]]></field>
+    </record>
+  </data>
+</odoo>

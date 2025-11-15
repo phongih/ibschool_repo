@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.admission_lead -->
+    <record id="view_ibschool.admission_lead_tree" model="ir.ui.view">
+      <field name="name">ibschool.admission_lead tree</field>
+      <field name="model">ibschool.admission_lead</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.admission_lead">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.admission_lead_form" model="ir.ui.view">
+      <field name="name">ibschool.admission_lead form</field>
+      <field name="model">ibschool.admission_lead</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.admission_lead">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.admission_lead" model="ir.actions.act_window">
+      <field name="name">ibschool.admission_lead</field>
+      <field name="res_model">ibschool.admission_lead</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.admission_lead records.]]></field>
+    </record>
+  </data>
+</odoo>

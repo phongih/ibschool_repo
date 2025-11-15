@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.hr_employee -->
+    <record id="view_ibschool.hr_employee_tree" model="ir.ui.view">
+      <field name="name">ibschool.hr_employee tree</field>
+      <field name="model">ibschool.hr_employee</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.hr_employee">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.hr_employee_form" model="ir.ui.view">
+      <field name="name">ibschool.hr_employee form</field>
+      <field name="model">ibschool.hr_employee</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.hr_employee">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.hr_employee" model="ir.actions.act_window">
+      <field name="name">ibschool.hr_employee</field>
+      <field name="res_model">ibschool.hr_employee</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.hr_employee records.]]></field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,21 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Odoo
+*.zip
+*.log
+*.db
+*.sqlite
+
+# Env
+.env
+venv/
+.envrc
+
+# IDE
+.vscode/
+.idea/

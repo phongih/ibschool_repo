@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Menu -->
+        <record id="menu_ibschool_attendance_root" model="ir.ui.menu">
+            <field name="name">Ibschool Attendance</field>
+            <field name="sequence">10</field>
+        </record>
+    </data>
+</odoo>

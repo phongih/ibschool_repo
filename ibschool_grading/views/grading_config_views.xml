@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.grading_config -->
+    <record id="view_ibschool.grading_config_tree" model="ir.ui.view">
+      <field name="name">ibschool.grading_config tree</field>
+      <field name="model">ibschool.grading_config</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.grading_config">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.grading_config_form" model="ir.ui.view">
+      <field name="name">ibschool.grading_config form</field>
+      <field name="model">ibschool.grading_config</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.grading_config">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.grading_config" model="ir.actions.act_window">
+      <field name="name">ibschool.grading_config</field>
+      <field name="res_model">ibschool.grading_config</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.grading_config records.]]></field>
+    </record>
+  </data>
+</odoo>

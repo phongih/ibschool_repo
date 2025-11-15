@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.dashboard_menu_override -->
+    <record id="view_ibschool.dashboard_menu_override_tree" model="ir.ui.view">
+      <field name="name">ibschool.dashboard_menu_override tree</field>
+      <field name="model">ibschool.dashboard_menu_override</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.dashboard_menu_override">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.dashboard_menu_override_form" model="ir.ui.view">
+      <field name="name">ibschool.dashboard_menu_override form</field>
+      <field name="model">ibschool.dashboard_menu_override</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.dashboard_menu_override">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.dashboard_menu_override" model="ir.actions.act_window">
+      <field name="name">ibschool.dashboard_menu_override</field>
+      <field name="res_model">ibschool.dashboard_menu_override</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.dashboard_menu_override records.]]></field>
+    </record>
+  </data>
+</odoo>

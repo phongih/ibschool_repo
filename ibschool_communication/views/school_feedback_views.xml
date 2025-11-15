@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.school_feedback -->
+    <record id="view_ibschool.school_feedback_tree" model="ir.ui.view">
+      <field name="name">ibschool.school_feedback tree</field>
+      <field name="model">ibschool.school_feedback</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.school_feedback">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.school_feedback_form" model="ir.ui.view">
+      <field name="name">ibschool.school_feedback form</field>
+      <field name="model">ibschool.school_feedback</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.school_feedback">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.school_feedback" model="ir.actions.act_window">
+      <field name="name">ibschool.school_feedback</field>
+      <field name="res_model">ibschool.school_feedback</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.school_feedback records.]]></field>
+    </record>
+  </data>
+</odoo>

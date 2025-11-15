@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.transport_route -->
+    <record id="view_ibschool.transport_route_tree" model="ir.ui.view">
+      <field name="name">ibschool.transport_route tree</field>
+      <field name="model">ibschool.transport_route</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.transport_route">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.transport_route_form" model="ir.ui.view">
+      <field name="name">ibschool.transport_route form</field>
+      <field name="model">ibschool.transport_route</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.transport_route">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.transport_route" model="ir.actions.act_window">
+      <field name="name">ibschool.transport_route</field>
+      <field name="res_model">ibschool.transport_route</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.transport_route records.]]></field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.dashboard_kpi -->
+    <record id="view_ibschool.dashboard_kpi_tree" model="ir.ui.view">
+      <field name="name">ibschool.dashboard_kpi tree</field>
+      <field name="model">ibschool.dashboard_kpi</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.dashboard_kpi">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.dashboard_kpi_form" model="ir.ui.view">
+      <field name="name">ibschool.dashboard_kpi form</field>
+      <field name="model">ibschool.dashboard_kpi</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.dashboard_kpi">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.dashboard_kpi" model="ir.actions.act_window">
+      <field name="name">ibschool.dashboard_kpi</field>
+      <field name="res_model">ibschool.dashboard_kpi</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.dashboard_kpi records.]]></field>
+    </record>
+  </data>
+</odoo>

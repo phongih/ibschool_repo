@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.lms_portal_templates_inherit -->
+    <record id="view_ibschool.lms_portal_templates_inherit_tree" model="ir.ui.view">
+      <field name="name">ibschool.lms_portal_templates_inherit tree</field>
+      <field name="model">ibschool.lms_portal_templates_inherit</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.lms_portal_templates_inherit">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.lms_portal_templates_inherit_form" model="ir.ui.view">
+      <field name="name">ibschool.lms_portal_templates_inherit form</field>
+      <field name="model">ibschool.lms_portal_templates_inherit</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.lms_portal_templates_inherit">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.lms_portal_templates_inherit" model="ir.actions.act_window">
+      <field name="name">ibschool.lms_portal_templates_inherit</field>
+      <field name="res_model">ibschool.lms_portal_templates_inherit</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.lms_portal_templates_inherit records.]]></field>
+    </record>
+  </data>
+</odoo>

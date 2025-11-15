@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Action & Views for ibschool.school_announcement -->
+    <record id="view_ibschool.school_announcement_tree" model="ir.ui.view">
+      <field name="name">ibschool.school_announcement tree</field>
+      <field name="model">ibschool.school_announcement</field>
+      <field name="arch" type="xml">
+        <tree string="ibschool.school_announcement">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_ibschool.school_announcement_form" model="ir.ui.view">
+      <field name="name">ibschool.school_announcement form</field>
+      <field name="model">ibschool.school_announcement</field>
+      <field name="arch" type="xml">
+        <form string="ibschool.school_announcement">
+          <sheet>
+            <group>
+              <field name="name"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_ibschool.school_announcement" model="ir.actions.act_window">
+      <field name="name">ibschool.school_announcement</field>
+      <field name="res_model">ibschool.school_announcement</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html"><![CDATA[Manage ibschool.school_announcement records.]]></field>
+    </record>
+  </data>
+</odoo>
